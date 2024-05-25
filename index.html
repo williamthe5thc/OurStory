@@ -8,21 +8,21 @@ async function loadAndIncrementVariable() {
   const variableName = "myVariable"; // Replace with the actual variable name in your text file
 
   try {
-    alert("try")
+    // alert("try")
     TestVariable = document.open("./variables.txt", "", "noopener=true");
-    alert ("opened")
+    // alert ("opened")
     document.parseInt(variable)
     const filePath = "./variables.txt";
-    alert(filePath)
+    // alert(filePath)
     // Fetch the current value from the text file
     localStorage.setItem("myVar", n);
-alert("test")
+// alert("test")
     const response = await fetch("./variables.txt");
-    alert("response")
+    // alert("response")
     const currentValue = parseInt(await response.text());
     // Increment the value
     const newValue = currentValue + 1;
-    alert("done")
+    // alert("done")
     // Send an AJAX request to update the text file with the new value
     const updateResponse = await fetch("variables", {
       method: "PUT",
@@ -35,21 +35,21 @@ alert("test")
       console.error("Error updating variable in text file");
     }
   } catch (error) {
-    alert("error")
+    // alert("error")
     console.error("Error while fetching or updating variable:", error);
   }
-  alert("all done")
+  // alert("all done")
 }
 
 // Call the function on page load
 window.onload = loadAndIncrementVariable;
 
-    myFunction2()
+    // myFunction2()
     
     
     function myFunction2(){
       document
-    // location.replace("https://www.theknot.com/us/kelli-king-and-jordan-charles-may-2024/registry")
+    location.replace("https://www.theknot.com/us/kelli-king-and-jordan-charles-may-2024/registry")
     }
     </script>
 <body>
